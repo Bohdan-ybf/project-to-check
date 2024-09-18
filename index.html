@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./src/css/reset.css">
+		<link rel="stylesheet" href="./src/css/style.css">
+		<title>Land</title>
+	</head>
+	<body>
+
+
+		<section class="section_base welcome-s step" id="step1">
+			<div class="container">
+				<div class="welcome_content_wrapper">
+					<span class="welcome_content_head">Stop spending time on mediocre online stuff!</span>
+					<h1 class="welcome_content_title">Explore our intriguing 3D game</h1>
+					<p class="welcome_content_text">instead and experience unparalleled pleasure like you've never seen before.</p>
+					<div class="button_wrapper">
+						<button class="btn btn_prev" onclick="submit()">No,thanks</button>
+						<button class="btn btn_next" onclick="nextStep(1)">Continue</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section_base slider-s step" id="step2">
+			<div class="container">
+				<div class="welcome_content_wrapper">
+					<h1 class="welcome_content_title cust">Who Would You Choose as Your First Partner, if you play right now?</h1>
+					<div class="slider">
+						<div class="slides">
+							<div class="slide active"><img src="./src/img/sl-1.png" alt="">
+								<p class="slider_text">Step-Sister</p>
+							</div>
+							<div class="slide"><img src="./src/img/sl-2.png" alt="">
+								<p class="slider_text">Step-Sister</p>
+							</div>
+							<div class="slide"><img src="./src/img/sl-3.png" alt="">
+								<p class="slider_text">Step-Sister</p>
+							</div>
+						</div>
+					</div>
+					<button class="slider-btn prev"><img src="./src/img/sl-arrow-prev.svg" alt=""></button>
+					<button class="slider-btn next"><img src="./src/img/sl-arrow-next.svg" alt=""></button>
+					<div class="button_wrapper">
+						<button class="btn btn_next" onclick="nextStep(2)">Next</button>
+						<!--  <button class="btn btn_next" onclick="prevStep(2)">back</button> -->
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="section_base welcome-s-l step" id="step3">
+			<div class="container">
+				<div class="welcome_content_wrapper">
+
+					<h1 class="welcome_content_title w">Warning</h1>
+					<p class="welcome_content_text">You must be at least 18 years old and comfortable with mature topics to play the game.</p>
+					<div class="button_wrapper">
+						<button class="btn btn_next" onclick="submit()">Ok, Continue</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+        <button class="sound_btn" id="toggleButton">
+            <svg width="52.000000" height="52.000000" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <defs>
+                    <clipPath id="clip3_74">
+                        <rect id="Frame" rx="-0.500000" width="31.000000" height="31.000000" transform="translate(10.500000 10.500000)" fill="white" fill-opacity="0"/>
+                    </clipPath>
+                </defs>
+                <rect id="Component 1" width="52.000000" height="52.000000" fill="#FFFFFF" fill-opacity="0"/>
+                <circle id="Ellipse 2" cx="26.000000" cy="26.000000" r="26.000000" fill="#EC1119" fill-opacity="1.000000"/>
+                <rect id="Frame" rx="-0.500000" width="31.000000" height="31.000000" transform="translate(10.500000 10.500000)" fill="#FFFFFF" fill-opacity="0"/>
+                <g clip-path="url(#clip3_74)">
+                    <path id="Vector" d="M36 26C36 28.09 35.18 30.1 33.71 31.59C33.52 31.78 33.27 31.88 33.01 31.88C32.75 31.88 32.49 31.78 32.3 31.6C32.12 31.41 32.01 31.16 32.01 30.9C32 30.64 32.1 30.38 32.28 30.19C33.38 29.07 34 27.57 34 26C34 24.43 33.38 22.92 32.28 21.8C32.1 21.61 32 21.35 32.01 21.09C32.01 20.83 32.12 20.58 32.3 20.39C32.49 20.21 32.75 20.11 33.01 20.11C33.27 20.11 33.52 20.21 33.71 20.4C35.18 21.89 36 23.9 36 26ZM35.68 16.27C35.49 16.08 35.23 15.99 34.96 16C34.7 16 34.45 16.12 34.27 16.31C34.08 16.5 33.99 16.76 34 17.03C34 17.29 34.12 17.54 34.31 17.73C35.47 18.77 36.4 20.04 37.03 21.47C37.67 22.89 37.99 24.44 37.99 26C37.99 27.56 37.67 29.1 37.03 30.52C36.4 31.95 35.47 33.22 34.31 34.27C34.12 34.45 34 34.7 34 34.96C33.99 35.23 34.08 35.49 34.27 35.68C34.45 35.87 34.7 35.99 34.96 36C35.23 36 35.49 35.91 35.68 35.73C37.04 34.49 38.12 32.99 38.87 31.32C39.61 29.64 40 27.83 40 26C40 24.16 39.61 22.35 38.87 20.67C38.12 19 37.04 17.5 35.68 16.27ZM30 15.92L30 36.08C29.99 36.44 29.89 36.79 29.7 37.1C29.51 37.41 29.23 37.67 28.91 37.84C28.59 38 28.23 38.08 27.86 38.06C27.5 38.04 27.15 37.92 26.85 37.71L18.68 32L15 32C14.2 32 13.44 31.68 12.87 31.12C12.31 30.55 12 29.79 12 29L12 23C12 22.2 12.31 21.44 12.87 20.87C13.44 20.31 14.2 20 15 20L18.68 20L26.85 14.28C27.15 14.07 27.5 13.95 27.86 13.93C28.23 13.91 28.59 13.99 28.91 14.15C29.23 14.32 29.51 14.58 29.7 14.89C29.89 15.2 29.99 15.55 30 15.92ZM18 22L15 22C14.73 22 14.48 22.1 14.29 22.29C14.1 22.48 14 22.73 14 23L14 29C14 29.26 14.1 29.51 14.29 29.7C14.48 29.89 14.73 30 15 30L18 30L18 22ZM28 36.08L28 15.92L20 21.52L20 30.48L28 36.08L28 36.08Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                </g>
+            </svg>
+            
+        </button>
+
+		<script src="./src/js/main.js"></script>
+	</body>
+</html>
